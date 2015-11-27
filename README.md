@@ -1,4 +1,4 @@
 # z-spring1
 test readme file
 
-edit in github
+edit in g!thub
