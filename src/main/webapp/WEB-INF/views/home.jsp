@@ -1,17 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home Title</title>
-</head>
-<body>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="t"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-	<c:forEach var="data" items="${testData}">
-		<c:out value="${data.name }"></c:out>
-	</c:forEach>
+<div>
+	<h2>bla bla bla bla bla</h2>
+	<h3>blablablablablablabla</h3>
 
-</body>
-</html>
+	<ol class="spittle-list">
+		<c:forEach var="spittle" items="${spittles }">
+			<s:url value="/spitters/"></s:url>
+
+		</c:forEach>
+	</ol>
+</div>

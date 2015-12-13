@@ -2,6 +2,7 @@ package ru.spring.controllers;
 
 import java.util.Map;
 
+import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Controller;
@@ -14,6 +15,9 @@ public class HomeController {
     
     @Resource
     private HomeService homeService;
+    
+    @PostConstruct
+    public void start() {}
     
     @RequestMapping({ "/", "/home" })
     public String showHomePage(Map<String, Object> model) {
